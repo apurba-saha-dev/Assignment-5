@@ -28,18 +28,18 @@
 
                 <!-- Heart Counter -->
                 <div class="flex items-center gap-2 px-7 h-[52px] rounded-[50px] bg-[#ecfff0]">
-                    <p class="text-sm font-extrabold inter_font text-[16px]">0</p>
+                    <p id="globalCount" class="text-sm font-extrabold inter_font text-[16px] count">0</p>
                     <img class="w-5 h-5" src="./assets/heart.png" alt="">
                 </div>
                 <!-- Coin Counter -->
                 <div class="flex items-center gap-2 px-7 h-[52px] rounded-[50px] bg-[#ecfff0]">
-                    <p class="text-sm font-extrabold inter_font text-[16px]">100</p>
+                    <p id="coins" class="text-sm font-extrabold inter_font text-[16px]">100</p>
                     <img class="w-5 h-5" src="./assets/coin.png" alt="">
                 </div>
                 <!-- Button -->
                 <div
                     class="flex items-center justify-center px-7 h-[52px] rounded-[50px] bg-[#00A63E] text-white font-bold">
-                    <p class="inter_font font-semibold">2 Copy</p>
+                    <p class="inter_font font-semibold cursor-pointer">2 Copy</p>
                 </div>
 
             </div>
@@ -70,24 +70,26 @@
             <div class=" p-[32px] rounded-[18px] shadow-md ">
                 <div class="flex items-center justify-between mb-4">
                     <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/emergency.png" alt="">
-                    <span><i class="fa-regular fa-heart" style="color: #5c5c5c;"></i></span>
+                    <span class="heartBtn cursor-pointer heart-btn"><i class="fa-regular fa-heart"
+                            style="color: #5c5c5c;"></i></span>
                 </div>
                 <div class="mb-6">
                     <h1 class="hind_madurai_font font-bold text-2xl">National Emergency Number</h1>
-                    <p class="roboto_font text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
-                    <h1 class="roboto_font font-bold text-[32px]">999</h1>
+                    <p class="service-name roboto_font text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
+                    <h1 class="service-number roboto_font font-bold text-[32px]">999</h1>
                     <p
                         class="hind_madurai_font text-[18px] h-[37px] w-[53px] px-4 py-1.5 text-[#5C5C5C] bg-[#f2f2f2] rounded-[9999px]">
                         All</p>
                 </div>
                 <div class="flex gap-2">
                     <div
-                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5]">
-                        <span><i class="fa-regular fa-copy" style="color: #5c5c5c;"></i></span>
-                        <p class="text-[#5C5C5C] roboto_font text-[16px]">Copy</p>
+                        class="group flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5] hover:bg-[#555863] hover:text-white cursor-pointer transition duration-200">
+                        <span class="text-[#5C5C5C] group-hover:text-white"><i class="fa-regular fa-copy"></i></span>
+                        <p class="text-[#5C5C5C] roboto_font text-[16px] group-hover:text-white">Copy</p>
                     </div>
 
-                    <div class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E]">
+                    <div
+                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E] hover:bg-[#bbccbd] cursor-pointer call-btn">
                         <span><i class="fa-solid fa-phone" style="color: #ffffff;"></i></span>
                         <p class="text-white  roboto_font text-[16px]">Call</p>
                     </div>
@@ -95,25 +97,27 @@
             </div>
             <div class="p-[32px] rounded-[18px] shadow-md">
                 <div class="flex items-center justify-between mb-4">
-                    <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/emergency.png" alt="">
-                    <span><i class="fa-regular fa-heart" style="color: #5c5c5c;"></i></span>
+                    <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/police.png" alt="">
+                    <span class="heartBtn cursor-pointer"><i class="fa-regular fa-heart"
+                            style="color: #5c5c5c;"></i></span>
                 </div>
                 <div class="mb-6">
-                    <h1 class="hind_madurai_font font-bold text-2xl">National Emergency Number</h1>
-                    <p class="roboto_font text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
-                    <h1 class="roboto_font font-bold text-[32px]">999</h1>
+                    <h1 class="hind_madurai_font font-bold text-2xl">Police Helpline Number</h1>
+                    <p class="service-name roboto_font text-[18px] text-[#5C5C5C] mb-6">Police</p>
+                    <h1 class="service-number roboto_font font-bold text-[32px]">999</h1>
                     <p
                         class="hind_madurai_font text-[18px] h-[37px] w-[53px] px-4 py-1.5 text-[#5C5C5C] bg-[#f2f2f2] rounded-[9999px]">
-                        All</p>
+                        Police</p>
                 </div>
                 <div class="flex gap-2">
                     <div
-                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5]">
-                        <span><i class="fa-regular fa-copy" style="color: #5c5c5c;"></i></span>
-                        <p class="text-[#5C5C5C] roboto_font text-[16px]">Copy</p>
+                        class="group flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5] hover:bg-[#555863] hover:text-white cursor-pointer transition duration-200">
+                        <span class="text-[#5C5C5C] group-hover:text-white"><i class="fa-regular fa-copy"></i></span>
+                        <p class="text-[#5C5C5C] roboto_font text-[16px] group-hover:text-white">Copy</p>
                     </div>
 
-                    <div class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E]">
+                    <div
+                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E] hover:bg-[#bbccbd] cursor-pointer call-btn">
                         <span><i class="fa-solid fa-phone" style="color: #ffffff;"></i></span>
                         <p class="text-white  roboto_font text-[16px]">Call</p>
                     </div>
@@ -121,41 +125,45 @@
             </div>
             <div class="p-[32px] rounded-[18px] shadow-md">
                 <div class="flex items-center justify-between mb-4">
-                    <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/emergency.png" alt="">
-                    <span><i class="fa-regular fa-heart" style="color: #5c5c5c;"></i></span>
+                    <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/fire-service.png" alt="">
+                    <span class="heartBtn cursor-pointer"><i class="fa-regular fa-heart"
+                            style="color: #5c5c5c;"></i></span>
                 </div>
                 <div class="mb-6">
-                    <h1 class="hind_madurai_font font-bold text-2xl">National Emergency Number</h1>
-                    <p class="roboto_font text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
-                    <h1 class="roboto_font font-bold text-[32px]">999</h1>
+                    <h1 class="hind_madurai_font font-bold text-2xl">Fire Service Number</h1>
+                    <p class="service-name roboto_font text-[18px] text-[#5C5C5C] mb-6">Fire Service</p>
+                    <h1 class="service-number roboto_font font-bold text-[32px]">999</h1>
                     <p
                         class="hind_madurai_font text-[18px] h-[37px] w-[53px] px-4 py-1.5 text-[#5C5C5C] bg-[#f2f2f2] rounded-[9999px]">
-                        All</p>
+                        Fire</p>
                 </div>
                 <div class="flex gap-2">
                     <div
-                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5]">
-                        <span><i class="fa-regular fa-copy" style="color: #5c5c5c;"></i></span>
-                        <p class="text-[#5C5C5C] roboto_font text-[16px]">Copy</p>
+                        class="group flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5] hover:bg-[#555863] hover:text-white cursor-pointer transition duration-200">
+                        <span class="text-[#5C5C5C] group-hover:text-white"><i class="fa-regular fa-copy"></i></span>
+                        <p class="text-[#5C5C5C] roboto_font text-[16px] group-hover:text-white">Copy</p>
                     </div>
 
-                    <div class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E]">
+                    <div
+                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E] hover:bg-[#bbccbd] cursor-pointer  call-btn">
                         <span><i class="fa-solid fa-phone" style="color: #ffffff;"></i></span>
-                        <p class="text-white  roboto_font text-[16px]">Call</p>
+                        <p class="text-white roboto_font text-[16px]">Call</p>
                     </div>
                 </div>
             </div>
             <!-- Call History Section Starts -->
             <section class="row-span-3 p-6 rounded-[12px] shadow-md bg-white">
-                <div class="pl-6 pt-6 pr-6 shadow-md  ">
+                <div class="pl-6 pt-6 pr-6">
 
                     <div class="flex h-[52px] items-center justify-between mb-4">
                         <div class="flex items-center gap-2">
-                            <span><i class="fa-regular fa-clock" style="color: #767676;"></i></span>
+                            <span><i class="fa-solid fa-clock" style="color: #202831;"></i></span>
                             <p class="roboto_font text-[20px] text-[#111111] font-medium">Call History</p>
                         </div>
-                        <div>
-                            <p class="inter_font font-semibold text-[16px] text-white bg-[#00a63e] px-9 py-3.5 rounded-[50px]">Clear</p>
+                        <div class="">
+                            <p
+                                class="inter_font font-semibold text-[16px] text-white bg-[#00a63e] px-9 py-3.5 rounded-[50px] cursor-pointer hover:bg-[#d2d2d2]">
+                                Clear</p>
                         </div>
                     </div>
 
@@ -232,25 +240,27 @@
             <!-- Call History Section Ends -->
             <div class="p-[32px] rounded-[18px] shadow-md">
                 <div class="flex items-center justify-between mb-4">
-                    <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/emergency.png" alt="">
-                    <span><i class="fa-regular fa-heart" style="color: #5c5c5c;"></i></span>
+                    <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/ambulance.png" alt="">
+                    <span class="heartBtn cursor-pointer"><i class="fa-regular fa-heart"
+                            style="color: #5c5c5c;"></i></span>
                 </div>
                 <div class="mb-6">
-                    <h1 class="hind_madurai_font font-bold text-2xl">National Emergency Number</h1>
-                    <p class="roboto_font text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
-                    <h1 class="roboto_font font-bold text-[32px]">999</h1>
+                    <h1 class="hind_madurai_font font-bold text-2xl">Ambulance Service</h1>
+                    <p class="service-name roboto_font text-[18px] text-[#5C5C5C] mb-6">Ambulance</p>
+                    <h1 class="service-number roboto_font font-bold text-[32px]">1994-999999</h1>
                     <p
                         class="hind_madurai_font text-[18px] h-[37px] w-[53px] px-4 py-1.5 text-[#5C5C5C] bg-[#f2f2f2] rounded-[9999px]">
-                        All</p>
+                        Health</p>
                 </div>
                 <div class="flex gap-2">
                     <div
-                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5]">
-                        <span><i class="fa-regular fa-copy" style="color: #5c5c5c;"></i></span>
-                        <p class="text-[#5C5C5C] roboto_font text-[16px]">Copy</p>
+                        class="group flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5] hover:bg-[#555863] hover:text-white cursor-pointer transition duration-200">
+                        <span class="text-[#5C5C5C] group-hover:text-white"><i class="fa-regular fa-copy"></i></span>
+                        <p class="text-[#5C5C5C] roboto_font text-[16px] group-hover:text-white">Copy</p>
                     </div>
 
-                    <div class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E]">
+                    <div
+                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E] hover:bg-[#bbccbd] cursor-pointer  call-btn">
                         <span><i class="fa-solid fa-phone" style="color: #ffffff;"></i></span>
                         <p class="text-white  roboto_font text-[16px]">Call</p>
                     </div>
@@ -259,24 +269,26 @@
             <div class="p-[32px] rounded-[18px] shadow-md">
                 <div class="flex items-center justify-between mb-4">
                     <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/emergency.png" alt="">
-                    <span><i class="fa-regular fa-heart" style="color: #5c5c5c;"></i></span>
+                    <span class="heartBtn cursor-pointer"><i class="fa-regular fa-heart"
+                            style="color: #5c5c5c;"></i></span>
                 </div>
                 <div class="mb-6">
-                    <h1 class="hind_madurai_font font-bold text-2xl">National Emergency Number</h1>
-                    <p class="roboto_font text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
-                    <h1 class="roboto_font font-bold text-[32px]">999</h1>
+                    <h1 class="hind_madurai_font font-bold text-2xl">Women & Child Helpline</h1>
+                    <p class="service-name roboto_font text-[18px] text-[#5C5C5C] mb-6">Women & Child Helpline</p>
+                    <h1 class="service-number roboto_font font-bold text-[32px]">109</h1>
                     <p
                         class="hind_madurai_font text-[18px] h-[37px] w-[53px] px-4 py-1.5 text-[#5C5C5C] bg-[#f2f2f2] rounded-[9999px]">
-                        All</p>
+                        Help</p>
                 </div>
                 <div class="flex gap-2">
                     <div
-                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5]">
-                        <span><i class="fa-regular fa-copy" style="color: #5c5c5c;"></i></span>
-                        <p class="text-[#5C5C5C] roboto_font text-[16px]">Copy</p>
+                        class="group flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5] hover:bg-[#555863] hover:text-white cursor-pointer transition duration-200">
+                        <span class="text-[#5C5C5C] group-hover:text-white"><i class="fa-regular fa-copy"></i></span>
+                        <p class="text-[#5C5C5C] roboto_font text-[16px] group-hover:text-white">Copy</p>
                     </div>
 
-                    <div class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E]">
+                    <div
+                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E] hover:bg-[#bbccbd] cursor-pointer call-btn">
                         <span><i class="fa-solid fa-phone" style="color: #ffffff;"></i></span>
                         <p class="text-white  roboto_font text-[16px]">Call</p>
                     </div>
@@ -285,24 +297,26 @@
             <div class="p-[32px] rounded-[18px] shadow-md">
                 <div class="flex items-center justify-between mb-4">
                     <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/emergency.png" alt="">
-                    <span><i class="fa-regular fa-heart" style="color: #5c5c5c;"></i></span>
+                    <span class="heartBtn cursor-pointer"><i class="fa-regular fa-heart"
+                            style="color: #5c5c5c;"></i></span>
                 </div>
                 <div class="mb-6">
-                    <h1 class="hind_madurai_font font-bold text-2xl">National Emergency Number</h1>
-                    <p class="roboto_font text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
-                    <h1 class="roboto_font font-bold text-[32px]">999</h1>
+                    <h1 class="hind_madurai_font font-bold text-2xl">Anti-Corruption Helpline</h1>
+                    <p class="service-name roboto_font text-[18px] text-[#5C5C5C] mb-6">Anti-Corruption</p>
+                    <h1 class="service-number roboto_font font-bold text-[32px]">106</h1>
                     <p
                         class="hind_madurai_font text-[18px] h-[37px] w-[53px] px-4 py-1.5 text-[#5C5C5C] bg-[#f2f2f2] rounded-[9999px]">
-                        All</p>
+                        Govt.</p>
                 </div>
                 <div class="flex gap-2">
                     <div
-                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5]">
-                        <span><i class="fa-regular fa-copy" style="color: #5c5c5c;"></i></span>
-                        <p class="text-[#5C5C5C] roboto_font text-[16px]">Copy</p>
+                        class="group flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5] hover:bg-[#555863] hover:text-white cursor-pointer transition duration-200">
+                        <span class="text-[#5C5C5C] group-hover:text-white"><i class="fa-regular fa-copy"></i></span>
+                        <p class="text-[#5C5C5C] roboto_font text-[16px] group-hover:text-white">Copy</p>
                     </div>
 
-                    <div class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E]">
+                    <div
+                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E] hover:bg-[#bbccbd] cursor-pointer call-btn">
                         <span><i class="fa-solid fa-phone" style="color: #ffffff;"></i></span>
                         <p class="text-white  roboto_font text-[16px]">Call</p>
                     </div>
@@ -311,24 +325,26 @@
             <div class="p-[32px] rounded-[18px] shadow-md">
                 <div class="flex items-center justify-between mb-4">
                     <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/emergency.png" alt="">
-                    <span><i class="fa-regular fa-heart" style="color: #5c5c5c;"></i></span>
+                    <span class="heartBtn cursor-pointer"><i class="fa-regular fa-heart"
+                            style="color: #5c5c5c;"></i></span>
                 </div>
                 <div class="mb-6">
-                    <h1 class="hind_madurai_font font-bold text-2xl">National Emergency Number</h1>
-                    <p class="roboto_font text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
-                    <h1 class="roboto_font font-bold text-[32px]">999</h1>
+                    <h1 class="hind_madurai_font font-bold text-2xl">Electricity Helpline</h1>
+                    <p class="service-name roboto_font text-[18px] text-[#5C5C5C] mb-6">Electricity Outage</p>
+                    <h1 class="service-number roboto_font font-bold text-[32px]">16216</h1>
                     <p
                         class="hind_madurai_font text-[18px] h-[37px] w-[53px] px-4 py-1.5 text-[#5C5C5C] bg-[#f2f2f2] rounded-[9999px]">
-                        All</p>
+                        Electricity</p>
                 </div>
                 <div class="flex gap-2">
                     <div
-                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5]">
-                        <span><i class="fa-regular fa-copy" style="color: #5c5c5c;"></i></span>
-                        <p class="text-[#5C5C5C] roboto_font text-[16px]">Copy</p>
+                        class="group flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5] hover:bg-[#555863] hover:text-white cursor-pointer transition duration-200">
+                        <span class="text-[#5C5C5C] group-hover:text-white"><i class="fa-regular fa-copy"></i></span>
+                        <p class="text-[#5C5C5C] roboto_font text-[16px] group-hover:text-white">Copy</p>
                     </div>
 
-                    <div class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E]">
+                    <div
+                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E] hover:bg-[#bbccbd] cursor-pointer call-btn">
                         <span><i class="fa-solid fa-phone" style="color: #ffffff;"></i></span>
                         <p class="text-white  roboto_font text-[16px]">Call</p>
                     </div>
@@ -336,25 +352,27 @@
             </div>
             <div class="p-[32px] rounded-[18px] shadow-md">
                 <div class="flex items-center justify-between mb-4">
-                    <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/emergency.png" alt="">
-                    <span><i class="fa-regular fa-heart" style="color: #5c5c5c;"></i></span>
+                    <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/brac.png" alt="">
+                    <span class="heartBtn cursor-pointer"><i class="fa-regular fa-heart"
+                            style="color: #5c5c5c;"></i></span>
                 </div>
                 <div class="mb-6">
-                    <h1 class="hind_madurai_font font-bold text-2xl">National Emergency Number</h1>
-                    <p class="roboto_font text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
-                    <h1 class="roboto_font font-bold text-[32px]">999</h1>
+                    <h1 class="hind_madurai_font font-bold text-2xl">Brac Helpline</h1>
+                    <p class="service-name roboto_font text-[18px] text-[#5C5C5C] mb-6">Brac</p>
+                    <h1 class="service-number roboto_font font-bold text-[32px]">16445</h1>
                     <p
                         class="hind_madurai_font text-[18px] h-[37px] w-[53px] px-4 py-1.5 text-[#5C5C5C] bg-[#f2f2f2] rounded-[9999px]">
-                        All</p>
+                        NGO</p>
                 </div>
                 <div class="flex gap-2">
                     <div
-                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5]">
-                        <span><i class="fa-regular fa-copy" style="color: #5c5c5c;"></i></span>
-                        <p class="text-[#5C5C5C] roboto_font text-[16px]">Copy</p>
+                        class="group flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5] hover:bg-[#555863] hover:text-white cursor-pointer transition duration-200">
+                        <span class="text-[#5C5C5C] group-hover:text-white"><i class="fa-regular fa-copy"></i></span>
+                        <p class="text-[#5C5C5C] roboto_font text-[16px] group-hover:text-white">Copy</p>
                     </div>
 
-                    <div class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E]">
+                    <div
+                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E] hover:bg-[#bbccbd] cursor-pointer call-btn">
                         <span><i class="fa-solid fa-phone" style="color: #ffffff;"></i></span>
                         <p class="text-white  roboto_font text-[16px]">Call</p>
                     </div>
@@ -362,25 +380,28 @@
             </div>
             <div class="p-[32px] rounded-[18px] shadow-md">
                 <div class="flex items-center justify-between mb-4">
-                    <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/emergency.png" alt="">
-                    <span><i class="fa-regular fa-heart" style="color: #5c5c5c;"></i></span>
+                    <img class="h-[60px] w-[60px] rounded-xl bg-[#FFE3E2] p-3.5" src="./assets/Bangladesh-Railway.png"
+                        alt="">
+                    <span class="heartBtn cursor-pointer"><i class="fa-regular fa-heart"
+                            style="color: #5c5c5c;"></i></span>
                 </div>
                 <div class="mb-6">
-                    <h1 class="hind_madurai_font font-bold text-2xl">National Emergency Number</h1>
-                    <p class="roboto_font text-[18px] text-[#5C5C5C] mb-6">National Emergency</p>
-                    <h1 class="roboto_font font-bold text-[32px]">999</h1>
+                    <h1 class="hind_madurai_font font-bold text-2xl">Bangladesh Railway Helpline </h1>
+                    <p class="service-name roboto_font text-[18px] text-[#5C5C5C] mb-6">Bangladesh Railway</p>
+                    <h1 class="service-number roboto_font font-bold text-[32px]">163</h1>
                     <p
                         class="hind_madurai_font text-[18px] h-[37px] w-[53px] px-4 py-1.5 text-[#5C5C5C] bg-[#f2f2f2] rounded-[9999px]">
-                        All</p>
+                        Travel</p>
                 </div>
                 <div class="flex gap-2">
                     <div
-                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5]">
-                        <span><i class="fa-regular fa-copy" style="color: #5c5c5c;"></i></span>
-                        <p class="text-[#5C5C5C] roboto_font text-[16px]">Copy</p>
+                        class="group flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] border-2 border-[#D4D6D5] hover:bg-[#555863] hover:text-white cursor-pointer transition duration-200">
+                        <span class="text-[#5C5C5C] group-hover:text-white"><i class="fa-regular fa-copy"></i></span>
+                        <p class="text-[#5C5C5C] roboto_font text-[16px] group-hover:text-white">Copy</p>
                     </div>
 
-                    <div class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E]">
+                    <div
+                        class="flex w-[50%] justify-center gap-[2px] h-10 items-center rounded-[8px] bg-[#00A63E] hover:bg-[#bbccbd] cursor-pointer  call-btn">
                         <span><i class="fa-solid fa-phone" style="color: #ffffff;"></i></span>
                         <p class="text-white  roboto_font text-[16px]">Call</p>
                     </div>
@@ -390,6 +411,10 @@
     </section>
     <!-- Main Body Section Ends -->
 
+    <script>
+    </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
